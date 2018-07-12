@@ -1,0 +1,18 @@
+<h1>Travelling Portal</h1>
+<form class="example-form">
+  
+  <div>
+    <mat-form-field>
+      <mat-select placeholder="Select city" [(ngModel)]="selectedValue" name="city">
+        <mat-option *ngFor="let city of cities" [value]="city.value">
+          {{city.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <p> Selected value: {{selectedValue}} </p>
+  </div>
+  
+  
+
+
